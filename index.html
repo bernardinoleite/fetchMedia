@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FetchMedia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Bem-vindo ao FetchMedia</h1>
+            <p>Escolha o tipo de mídia para baixar:</p>
+        </header>
+        <div class="selection">
+            <button class="btn" onclick="showInput('video')">Baixar Vídeo</button>
+            <button class="btn" onclick="showInput('imagem')">Baixar Imagem</button>
+        </div>
+
+        <section id="video" class="content-section">
+            <h2>Baixar Vídeo</h2>
+            <p>Digite a URL do vídeo que você deseja baixar:</p>
+            <input type="text" id="video-url" placeholder="Cole a URL do vídeo aqui">
+            <button class="btn dwd" data-type="video">Baixar Vídeo</button>
+        </section>
+
+        <section id="imagem" class="content-section">
+            <h2>Baixar Imagem</h2>
+            <p>Digite a URL da imagem que você deseja baixar:</p>
+            <input type="text" id="image-url" placeholder="Cole a URL da imagem aqui">
+            <button class="btn dwd" data-type="img">Baixar Imagem</button>
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
